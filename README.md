@@ -27,6 +27,8 @@ layout/main.php (показ сообщений в шаблоне)
 
 
 send code:
+
+
             Yii::app()->broadcast()->send('tickets', array(
                                                  'text' => 'Поступила новая заявка: ' . CHtml::link('перейти', Y::a()->createUrl('/sys/ticket/view', array('id' => $this->id)))
                                             ));
